@@ -1,0 +1,771 @@
+﻿{
+    "expand":  "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10010.requestTypePractice",
+    "id":  "142090",
+    "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/142090",
+    "key":  "NGWD6-50654",
+    "fields":  {
+                   "parent":  {
+                                  "id":  "117612",
+                                  "key":  "NGWD6-45983",
+                                  "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/117612",
+                                  "fields":  {
+                                                 "summary":  "[myD] New Brand Design 2026",
+                                                 "status":  {
+                                                                "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/status/1",
+                                                                "description":  "The work item is open and ready for the assignee to start work on it.",
+                                                                "iconUrl":  "https://vwgroup-b2b.atlassian.net/images/icons/statuses/open.png",
+                                                                "name":  "Open",
+                                                                "id":  "1",
+                                                                "statusCategory":  {
+                                                                                       "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/statuscategory/2",
+                                                                                       "id":  2,
+                                                                                       "key":  "new",
+                                                                                       "colorName":  "blue-gray",
+                                                                                       "name":  "To Do"
+                                                                                   }
+                                                            },
+                                                 "priority":  {
+                                                                  "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/priority/10002",
+                                                                  "iconUrl":  "https://vwgroup-b2b.atlassian.net/images/icons/priorities/major.svg",
+                                                                  "name":  "Major",
+                                                                  "id":  "10002"
+                                                              },
+                                                 "issuetype":  {
+                                                                   "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issuetype/10000",
+                                                                   "id":  "10000",
+                                                                   "description":  "Created by Jira Software - do not edit or delete. Issue type for a big user story that needs to be broken down.",
+                                                                   "iconUrl":  "https://vwgroup-b2b.atlassian.net/images/icons/issuetypes/epic.svg",
+                                                                   "name":  "Epic",
+                                                                   "subtask":  false,
+                                                                   "hierarchyLevel":  1
+                                                               }
+                                             }
+                              },
+                   "customfield_10190":  null,
+                   "customfield_10191":  null,
+                   "customfield_10193":  null,
+                   "customfield_10073":  null,
+                   "customfield_10194":  null,
+                   "customfield_10195":  null,
+                   "customfield_10074":  null,
+                   "customfield_10196":  null,
+                   "customfield_10197":  null,
+                   "customfield_10198":  null,
+                   "statusCategory":  {
+                                          "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/statuscategory/4",
+                                          "id":  4,
+                                          "key":  "indeterminate",
+                                          "colorName":  "yellow",
+                                          "name":  "In Progress"
+                                      },
+                   "customfield_10199":  {
+                                             "type":  "doc",
+                                             "version":  1,
+                                             "content":  [
+                                                             {
+                                                                 "type":  "table",
+                                                                 "attrs":  {
+                                                                               "isNumberColumnEnabled":  false,
+                                                                               "layout":  "default"
+                                                                           },
+                                                                 "content":  [
+                                                                                 "@{type=tableRow; content=System.Object[]}",
+                                                                                 "@{type=tableRow; content=System.Object[]}"
+                                                                             ]
+                                                             }
+                                                         ]
+                                         },
+                   "resolution":  null,
+                   "lastViewed":  "2026-06-08T10:45:25.499+0200",
+                   "customfield_10180":  null,
+                   "customfield_10060":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10074",
+                                             "value":  "Nicht bewertet",
+                                             "id":  "10074"
+                                         },
+                   "customfield_10181":  null,
+                   "customfield_10182":  null,
+                   "customfield_10183":  null,
+                   "customfield_10062":  null,
+                   "customfield_10063":  null,
+                   "customfield_10184":  null,
+                   "customfield_10185":  null,
+                   "customfield_10186":  null,
+                   "customfield_10065":  1.0,
+                   "customfield_10187":  null,
+                   "customfield_10066":  null,
+                   "customfield_10188":  null,
+                   "customfield_10189":  null,
+                   "labels":  [
+
+                              ],
+                   "aggregatetimeoriginalestimate":  null,
+                   "issuelinks":  [
+                                      {
+                                          "id":  "95552",
+                                          "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issueLink/95552",
+                                          "type":  {
+                                                       "id":  "10001",
+                                                       "name":  "Cloners",
+                                                       "inward":  "is cloned by",
+                                                       "outward":  "clones",
+                                                       "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issueLinkType/10001"
+                                                   },
+                                          "outwardIssue":  {
+                                                               "id":  "142088",
+                                                               "key":  "NGWD6-50653",
+                                                               "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/142088",
+                                                               "fields":  {
+                                                                              "summary":  "Test Drive",
+                                                                              "status":  "@{self=https://vwgroup-b2b.atlassian.net/rest/api/3/status/10066; description=(Migrated on 6 Dec 2024 18:52 UTC); iconUrl=https://vwgroup-b2b.atlassian.net/images/icons/statuses/generic.png; name=Development Done; id=10066; statusCategory=}",
+                                                                              "priority":  "@{self=https://vwgroup-b2b.atlassian.net/rest/api/3/priority/10001; iconUrl=https://vwgroup-b2b.atlassian.net/images/icons/priorities/critical.svg; name=Critical; id=10001}",
+                                                                              "issuetype":  "@{self=https://vwgroup-b2b.atlassian.net/rest/api/3/issuetype/10006; id=10006; description=Created by Jira Software - do not edit or delete. Issue type for a user story.; iconUrl=https://vwgroup-b2b.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium; name=Story; subtask=False; avatarId=10315; hierarchyLevel=0}"
+                                                                          }
+                                                           }
+                                      },
+                                      {
+                                          "id":  "108105",
+                                          "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issueLink/108105",
+                                          "type":  {
+                                                       "id":  "10003",
+                                                       "name":  "Relates",
+                                                       "inward":  "relates to",
+                                                       "outward":  "relates to",
+                                                       "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issueLinkType/10003"
+                                                   },
+                                          "inwardIssue":  {
+                                                              "id":  "156235",
+                                                              "key":  "NGWD6-51947",
+                                                              "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/156235",
+                                                              "fields":  {
+                                                                             "summary":  "[myDealer] v1.377.2",
+                                                                             "status":  "@{self=https://vwgroup-b2b.atlassian.net/rest/api/3/status/10126; description=(Migrated on 6 Dec 2024 19:22 UTC); iconUrl=https://vwgroup-b2b.atlassian.net/images/icons/statuses/generic.png; name=In Testing (QA-Stage); id=10126; statusCategory=}",
+                                                                             "priority":  "@{self=https://vwgroup-b2b.atlassian.net/rest/api/3/priority/10002; iconUrl=https://vwgroup-b2b.atlassian.net/images/icons/priorities/major.svg; name=Major; id=10002}",
+                                                                             "issuetype":  "@{self=https://vwgroup-b2b.atlassian.net/rest/api/3/issuetype/10047; id=10047; description=(Migrated on 6 Dec 2024 19:22 UTC); iconUrl=https://vwgroup-b2b.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10300?size=medium; name=Releaseprocess Task; subtask=False; avatarId=10300; hierarchyLevel=0}"
+                                                                         }
+                                                          }
+                                      },
+                                      {
+                                          "id":  "109586",
+                                          "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issueLink/109586",
+                                          "type":  {
+                                                       "id":  "10006",
+                                                       "name":  "finish-start [GANTT]",
+                                                       "inward":  "has to be done after",
+                                                       "outward":  "has to be done before",
+                                                       "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issueLinkType/10006"
+                                                   },
+                                          "inwardIssue":  {
+                                                              "id":  "158338",
+                                                              "key":  "NGWD6-52075",
+                                                              "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/158338",
+                                                              "fields":  {
+                                                                             "summary":  "Premier section - image crops incorrectly",
+                                                                             "status":  "@{self=https://vwgroup-b2b.atlassian.net/rest/api/3/status/1; description=The work item is open and ready for the assignee to start work on it.; iconUrl=https://vwgroup-b2b.atlassian.net/images/icons/statuses/open.png; name=Open; id=1; statusCategory=}",
+                                                                             "priority":  "@{self=https://vwgroup-b2b.atlassian.net/rest/api/3/priority/10003; iconUrl=https://vwgroup-b2b.atlassian.net/images/icons/priorities/minor.svg; name=Minor; id=10003}",
+                                                                             "issuetype":  "@{self=https://vwgroup-b2b.atlassian.net/rest/api/3/issuetype/10014; id=10014; description=A problem which impairs or prevents the functions of the product.; iconUrl=https://vwgroup-b2b.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10303?size=medium; name=Bug; subtask=False; avatarId=10303; hierarchyLevel=0}"
+                                                                         }
+                                                          }
+                                      }
+                                  ],
+                   "assignee":  {
+                                    "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/user?accountId=61dcb90df3037f0069593cf0",
+                                    "accountId":  "61dcb90df3037f0069593cf0",
+                                    "avatarUrls":  {
+                                                       "48x48":  "https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png",
+                                                       "24x24":  "https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png",
+                                                       "16x16":  "https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png",
+                                                       "32x32":  "https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png"
+                                                   },
+                                    "displayName":  "Reka Szilagyi",
+                                    "active":  true,
+                                    "timeZone":  "Europe/Berlin",
+                                    "accountType":  "atlassian"
+                                },
+                   "components":  [
+                                      {
+                                          "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/component/10299",
+                                          "id":  "10299",
+                                          "name":  "myDealer",
+                                          "description":  "Components related to myDealer"
+                                      }
+                                  ],
+                   "customfield_10170":  null,
+                   "customfield_10050":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10047",
+                                             "value":  "Not needed",
+                                             "id":  "10047"
+                                         },
+                   "customfield_10171":  null,
+                   "customfield_10172":  null,
+                   "customfield_10051":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10051",
+                                             "value":  "Minor",
+                                             "id":  "10051"
+                                         },
+                   "customfield_10052":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10054",
+                                             "value":  "No",
+                                             "id":  "10054"
+                                         },
+                   "customfield_10173":  null,
+                   "customfield_10174":  null,
+                   "customfield_10053":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10057",
+                                             "value":  "No",
+                                             "id":  "10057"
+                                         },
+                   "customfield_10054":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10060",
+                                             "value":  "No",
+                                             "id":  "10060"
+                                         },
+                   "customfield_10175":  null,
+                   "customfield_10055":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10062",
+                                             "value":  "No",
+                                             "id":  "10062"
+                                         },
+                   "customfield_10176":  null,
+                   "customfield_10177":  null,
+                   "customfield_10056":  [
+                                             {
+                                                 "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10064",
+                                                 "value":  "No",
+                                                 "id":  "10064"
+                                             }
+                                         ],
+                   "customfield_10178":  null,
+                   "customfield_10057":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10067",
+                                             "value":  "No",
+                                             "id":  "10067"
+                                         },
+                   "customfield_10179":  null,
+                   "customfield_10058":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10068",
+                                             "value":  "Nicht bewertet",
+                                             "id":  "10068"
+                                         },
+                   "customfield_10059":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10071",
+                                             "value":  "Nicht bewertet",
+                                             "id":  "10071"
+                                         },
+                   "customfield_10049":  null,
+                   "subtasks":  [
+
+                                ],
+                   "customfield_10161":  null,
+                   "customfield_10040":  null,
+                   "customfield_10041":  null,
+                   "customfield_10162":  null,
+                   "customfield_10283":  null,
+                   "reporter":  {
+                                    "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/user?accountId=5f33c4113aa35b003fd67c11",
+                                    "accountId":  "5f33c4113aa35b003fd67c11",
+                                    "avatarUrls":  {
+                                                       "48x48":  "https://secure.gravatar.com/avatar/d545a0f5de8fdf9ab3eed194b4151e24?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLB-4.png",
+                                                       "24x24":  "https://secure.gravatar.com/avatar/d545a0f5de8fdf9ab3eed194b4151e24?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLB-4.png",
+                                                       "16x16":  "https://secure.gravatar.com/avatar/d545a0f5de8fdf9ab3eed194b4151e24?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLB-4.png",
+                                                       "32x32":  "https://secure.gravatar.com/avatar/d545a0f5de8fdf9ab3eed194b4151e24?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLB-4.png"
+                                                   },
+                                    "displayName":  "Levente Berciu",
+                                    "active":  true,
+                                    "timeZone":  "Europe/Berlin",
+                                    "accountType":  "atlassian"
+                                },
+                   "customfield_10043":  null,
+                   "customfield_10164":  null,
+                   "customfield_10165":  null,
+                   "customfield_10044":  null,
+                   "customfield_10045":  null,
+                   "customfield_10166":  null,
+                   "customfield_10167":  null,
+                   "customfield_10047":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10031",
+                                             "value":  "AH-78034551",
+                                             "id":  "10031"
+                                         },
+                   "customfield_10168":  null,
+                   "customfield_10048":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/10036",
+                                             "value":  "3300091930",
+                                             "id":  "10036"
+                                         },
+                   "customfield_10169":  null,
+                   "customfield_10159":  null,
+                   "customfield_10038":  null,
+                   "progress":  {
+                                    "progress":  0,
+                                    "total":  0
+                                },
+                   "votes":  {
+                                 "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/NGWD6-50654/votes",
+                                 "votes":  0,
+                                 "hasVoted":  false
+                             },
+                   "worklog":  {
+                                   "startAt":  0,
+                                   "maxResults":  20,
+                                   "total":  0,
+                                   "worklogs":  [
+
+                                                ]
+                               },
+                   "issuetype":  {
+                                     "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issuetype/10006",
+                                     "id":  "10006",
+                                     "description":  "Created by Jira Software - do not edit or delete. Issue type for a user story.",
+                                     "iconUrl":  "https://vwgroup-b2b.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                                     "name":  "Story",
+                                     "subtask":  false,
+                                     "avatarId":  10315,
+                                     "hierarchyLevel":  0
+                                 },
+                   "customfield_10151":  null,
+                   "project":  {
+                                   "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/project/10028",
+                                   "id":  "10028",
+                                   "key":  "NGWD6",
+                                   "name":  "NGWDESIGN6",
+                                   "projectTypeKey":  "software",
+                                   "simplified":  false,
+                                   "avatarUrls":  {
+                                                      "48x48":  "https://vwgroup-b2b.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10419",
+                                                      "24x24":  "https://vwgroup-b2b.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10419?size=small",
+                                                      "16x16":  "https://vwgroup-b2b.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10419?size=xsmall",
+                                                      "32x32":  "https://vwgroup-b2b.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10419?size=medium"
+                                                  },
+                                   "projectCategory":  {
+                                                           "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/projectCategory/10003",
+                                                           "id":  "10003",
+                                                           "description":  "All Projects belonging to the DBS (Digital Business Strategy) Cluster",
+                                                           "name":  "DBS-CLUSTER"
+                                                       }
+                               },
+                   "customfield_10031":  null,
+                   "customfield_10032":  null,
+                   "customfield_10033":  null,
+                   "customfield_10034":  null,
+                   "customfield_10035":  null,
+                   "customfield_10157":  null,
+                   "customfield_10036":  null,
+                   "customfield_10037":  null,
+                   "customfield_10027":  null,
+                   "customfield_10028":  null,
+                   "customfield_10029":  null,
+                   "resolutiondate":  null,
+                   "watches":  {
+                                   "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/NGWD6-50654/watchers",
+                                   "watchCount":  3,
+                                   "isWatching":  false
+                               },
+                   "customfield_10382":  null,
+                   "customfield_10020":  [
+                                             {
+                                                 "id":  29661,
+                                                 "name":  "Sprint 125",
+                                                 "state":  "closed",
+                                                 "boardId":  104,
+                                                 "goal":  "",
+                                                 "startDate":  "2026-05-11T22:00:18.298Z",
+                                                 "endDate":  "2026-05-25T22:00:00.000Z",
+                                                 "completeDate":  "2026-05-26T11:40:12.821Z"
+                                             }
+                                         ],
+                   "customfield_10383":  {
+                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/customFieldOption/11595",
+                                             "value":  "Feature",
+                                             "id":  "11595"
+                                         },
+                   "customfield_10142":  null,
+                   "customfield_10021":  null,
+                   "customfield_10143":  null,
+                   "customfield_10022":  null,
+                   "customfield_10023":  null,
+                   "customfield_10024":  "2026-04-22T11:43:34.830+0200",
+                   "customfield_10145":  null,
+                   "customfield_10025":  null,
+                   "customfield_10146":  null,
+                   "customfield_10026":  null,
+                   "customfield_10016":  null,
+                   "customfield_10017":  null,
+                   "customfield_10138":  null,
+                   "customfield_10139":  null,
+                   "customfield_10019":  "1|i3ciw5:z",
+                   "updated":  "2026-06-02T17:13:44.484+0200",
+                   "timeoriginalestimate":  null,
+                   "customfield_10250":  null,
+                   "description":  {
+                                       "type":  "doc",
+                                       "version":  1,
+                                       "content":  [
+                                                       {
+                                                           "type":  "paragraph",
+                                                           "content":  [
+                                                                           "@{type=text; text=User Story:; marks=System.Object[]}"
+                                                                       ]
+                                                       },
+                                                       {
+                                                           "type":  "paragraph",
+                                                           "content":  [
+                                                                           "@{type=text; text=Figma link: ; marks=System.Object[]}",
+                                                                           "@{type=inlineCard; attrs=}",
+                                                                           "@{type=text; text= }"
+                                                                       ]
+                                                       },
+                                                       {
+                                                           "type":  "paragraph"
+                                                       },
+                                                       {
+                                                           "type":  "paragraph"
+                                                       },
+                                                       {
+                                                           "type":  "paragraph",
+                                                           "content":  [
+                                                                           "@{type=text; text=Definition of Ready:; marks=System.Object[]}"
+                                                                       ]
+                                                       },
+                                                       {
+                                                           "type":  "paragraph",
+                                                           "content":  [
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Small enough to fit in one Sprint}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Dependencies are clarified --\u003e CMS}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= There must always be a clear value}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= All relevant (not outdated!) files/docs/info etc. is attached to the ticket}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= If needed: A validated concept \u0026 design is available and linked / added to PBI}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Acceptance Criteria exist \u0026 are short, understandable and testable}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Prioritization done by PO}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Not multiple unrelated features should be described in one ticket}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= i18n translations: value of newly added i18n keys}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=text; text=checked for a11y in Feature Apps}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Tracking requirements are considered}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Estimated (Story Points)}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Program Label/OKRS}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Cookbook relevant}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Check Design/Wordings/Icons regarding consistency (OneHub in general DCC in specific)}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Naming conventions}"
+                                                                       ]
+                                                       },
+                                                       {
+                                                           "type":  "paragraph",
+                                                           "content":  [
+                                                                           "@{type=text; text=Definition of Done:; marks=System.Object[]}"
+                                                                       ]
+                                                       },
+                                                       {
+                                                           "type":  "paragraph",
+                                                           "content":  [
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Tracking is implemented if applicable}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Integration test are added if needed}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Documentation is added}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= FOSS list updated if needed}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= i18n schema is updated and documented if needed}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Tested in OneHub CMS integrator from a Dev during implementation}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Internal development pages are updated}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Design QA\u0027ed (if frontend involved)}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= AA compliant}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= QA done (successfully)}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Test documentation from QA}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= Tested along browser matrix}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= AC are fulfilled}",
+                                                                           "@{type=hardBreak}",
+                                                                           "@{type=emoji; attrs=}",
+                                                                           "@{type=text; text= PO approval}"
+                                                                       ]
+                                                       }
+                                                   ]
+                                   },
+                   "customfield_10251":  null,
+                   "customfield_10010":  null,
+                   "customfield_10252":  null,
+                   "customfield_10253":  null,
+                   "customfield_10014":  "NGWD6-45983",
+                   "customfield_10136":  null,
+                   "timetracking":  {
+
+                                    },
+                   "customfield_10015":  null,
+                   "customfield_10005":  null,
+                   "customfield_10489":  null,
+                   "customfield_10006":  null,
+                   "customfield_10007":  null,
+                   "customfield_10008":  null,
+                   "customfield_10009":  null,
+                   "summary":  "Premiere Section - CMS",
+                   "customfield_10120":  {
+                                             "type":  "doc",
+                                             "version":  1,
+                                             "content":  [
+                                                             {
+                                                                 "type":  "paragraph",
+                                                                 "content":  [
+                                                                                 "@{type=text; text=Please note: This how to fill out the contact list; marks=System.Object[]}"
+                                                                             ]
+                                                             },
+                                                             {
+                                                                 "type":  "table",
+                                                                 "attrs":  {
+                                                                               "isNumberColumnEnabled":  false,
+                                                                               "layout":  "default"
+                                                                           },
+                                                                 "content":  [
+                                                                                 "@{type=tableRow; content=System.Object[]}",
+                                                                                 "@{type=tableRow; content=System.Object[]}",
+                                                                                 "@{type=tableRow; content=System.Object[]}",
+                                                                                 "@{type=tableRow; content=System.Object[]}",
+                                                                                 "@{type=tableRow; content=System.Object[]}"
+                                                                             ]
+                                                             }
+                                                         ]
+                                         },
+                   "customfield_10121":  null,
+                   "customfield_10001":  null,
+                   "customfield_10122":  null,
+                   "customfield_10002":  [
+
+                                         ],
+                   "customfield_10003":  null,
+                   "customfield_10124":  null,
+                   "customfield_10116":  null,
+                   "environment":  null,
+                   "customfield_10118":  null,
+                   "duedate":  null,
+                   "comment":  {
+                                   "comments":  [
+                                                    {
+                                                        "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/142090/comment/299969",
+                                                        "id":  "299969",
+                                                        "author":  {
+                                                                       "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/user?accountId=712020%3A216a8bcc-acf4-471a-93fe-281e5339aa54",
+                                                                       "accountId":  "712020:216a8bcc-acf4-471a-93fe-281e5339aa54",
+                                                                       "avatarUrls":  "@{48x48=https://secure.gravatar.com/avatar/f16af76eb97e895c5c19a4716ac9ae97?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FUM-6.png; 24x24=https://secure.gravatar.com/avatar/f16af76eb97e895c5c19a4716ac9ae97?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FUM-6.png; 16x16=https://secure.gravatar.com/avatar/f16af76eb97e895c5c19a4716ac9ae97?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FUM-6.png; 32x32=https://secure.gravatar.com/avatar/f16af76eb97e895c5c19a4716ac9ae97?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FUM-6.png}",
+                                                                       "displayName":  "Udo Merten",
+                                                                       "active":  true,
+                                                                       "timeZone":  "Europe/Berlin",
+                                                                       "accountType":  "atlassian"
+                                                                   },
+                                                        "body":  {
+                                                                     "type":  "doc",
+                                                                     "version":  1,
+                                                                     "content":  ""
+                                                                 },
+                                                        "updateAuthor":  {
+                                                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/user?accountId=712020%3A216a8bcc-acf4-471a-93fe-281e5339aa54",
+                                                                             "accountId":  "712020:216a8bcc-acf4-471a-93fe-281e5339aa54",
+                                                                             "avatarUrls":  "@{48x48=https://secure.gravatar.com/avatar/f16af76eb97e895c5c19a4716ac9ae97?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FUM-6.png; 24x24=https://secure.gravatar.com/avatar/f16af76eb97e895c5c19a4716ac9ae97?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FUM-6.png; 16x16=https://secure.gravatar.com/avatar/f16af76eb97e895c5c19a4716ac9ae97?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FUM-6.png; 32x32=https://secure.gravatar.com/avatar/f16af76eb97e895c5c19a4716ac9ae97?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FUM-6.png}",
+                                                                             "displayName":  "Udo Merten",
+                                                                             "active":  true,
+                                                                             "timeZone":  "Europe/Berlin",
+                                                                             "accountType":  "atlassian"
+                                                                         },
+                                                        "created":  "2026-04-22T11:43:34.830+0200",
+                                                        "updated":  "2026-04-22T11:43:34.830+0200",
+                                                        "jsdPublic":  true
+                                                    },
+                                                    {
+                                                        "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/142090/comment/305669",
+                                                        "id":  "305669",
+                                                        "author":  {
+                                                                       "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/user?accountId=61dcb90df3037f0069593cf0",
+                                                                       "accountId":  "61dcb90df3037f0069593cf0",
+                                                                       "avatarUrls":  "@{48x48=https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png; 24x24=https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png; 16x16=https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png; 32x32=https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png}",
+                                                                       "displayName":  "Reka Szilagyi",
+                                                                       "active":  true,
+                                                                       "timeZone":  "Europe/Berlin",
+                                                                       "accountType":  "atlassian"
+                                                                   },
+                                                        "body":  {
+                                                                     "type":  "doc",
+                                                                     "version":  1,
+                                                                     "content":  ""
+                                                                 },
+                                                        "updateAuthor":  {
+                                                                             "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/user?accountId=61dcb90df3037f0069593cf0",
+                                                                             "accountId":  "61dcb90df3037f0069593cf0",
+                                                                             "avatarUrls":  "@{48x48=https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png; 24x24=https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png; 16x16=https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png; 32x32=https://secure.gravatar.com/avatar/556093b2fdb297bf7887c551f606d685?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png}",
+                                                                             "displayName":  "Reka Szilagyi",
+                                                                             "active":  true,
+                                                                             "timeZone":  "Europe/Berlin",
+                                                                             "accountType":  "atlassian"
+                                                                         },
+                                                        "created":  "2026-05-28T13:39:53.836+0200",
+                                                        "updated":  "2026-05-28T13:39:53.836+0200",
+                                                        "jsdPublic":  true
+                                                    }
+                                                ],
+                                   "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/issue/142090/comment",
+                                   "maxResults":  2,
+                                   "total":  2,
+                                   "startAt":  0
+                               },
+                   "statuscategorychangedate":  "2026-04-28T10:22:22.895+0200",
+                   "fixVersions":  [
+
+                                   ],
+                   "customfield_10110":  null,
+                   "customfield_10111":  null,
+                   "customfield_10112":  null,
+                   "customfield_10105":  null,
+                   "customfield_10349":  null,
+                   "customfield_10108":  null,
+                   "customfield_10109":  null,
+                   "priority":  {
+                                    "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/priority/10002",
+                                    "iconUrl":  "https://vwgroup-b2b.atlassian.net/images/icons/priorities/major.svg",
+                                    "name":  "Major",
+                                    "id":  "10002"
+                                },
+                   "customfield_10216":  null,
+                   "timeestimate":  null,
+                   "versions":  [
+
+                                ],
+                   "status":  {
+                                  "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/status/10066",
+                                  "description":  "(Migrated on 6 Dec 2024 18:52 UTC)",
+                                  "iconUrl":  "https://vwgroup-b2b.atlassian.net/images/icons/statuses/generic.png",
+                                  "name":  "Development Done",
+                                  "id":  "10066",
+                                  "statusCategory":  {
+                                                         "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/statuscategory/4",
+                                                         "id":  4,
+                                                         "key":  "indeterminate",
+                                                         "colorName":  "yellow",
+                                                         "name":  "In Progress"
+                                                     }
+                              },
+                   "customfield_10210":  null,
+                   "customfield_10211":  null,
+                   "customfield_10212":  null,
+                   "customfield_10203":  null,
+                   "customfield_10204":  null,
+                   "customfield_10205":  null,
+                   "customfield_10206":  null,
+                   "customfield_10207":  null,
+                   "aggregatetimeestimate":  null,
+                   "creator":  {
+                                   "self":  "https://vwgroup-b2b.atlassian.net/rest/api/3/user?accountId=5f33c4113aa35b003fd67c11",
+                                   "accountId":  "5f33c4113aa35b003fd67c11",
+                                   "avatarUrls":  {
+                                                      "48x48":  "https://secure.gravatar.com/avatar/d545a0f5de8fdf9ab3eed194b4151e24?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLB-4.png",
+                                                      "24x24":  "https://secure.gravatar.com/avatar/d545a0f5de8fdf9ab3eed194b4151e24?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLB-4.png",
+                                                      "16x16":  "https://secure.gravatar.com/avatar/d545a0f5de8fdf9ab3eed194b4151e24?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLB-4.png",
+                                                      "32x32":  "https://secure.gravatar.com/avatar/d545a0f5de8fdf9ab3eed194b4151e24?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLB-4.png"
+                                                  },
+                                   "displayName":  "Levente Berciu",
+                                   "active":  true,
+                                   "timeZone":  "Europe/Berlin",
+                                   "accountType":  "atlassian"
+                               },
+                   "aggregateprogress":  {
+                                             "progress":  0,
+                                             "total":  0
+                                         },
+                   "customfield_10200":  {
+                                             "type":  "doc",
+                                             "version":  1,
+                                             "content":  [
+                                                             {
+                                                                 "type":  "table",
+                                                                 "attrs":  {
+                                                                               "isNumberColumnEnabled":  false,
+                                                                               "layout":  "default"
+                                                                           },
+                                                                 "content":  [
+                                                                                 "@{type=tableRow; content=System.Object[]}",
+                                                                                 "@{type=tableRow; content=System.Object[]}"
+                                                                             ]
+                                                             }
+                                                         ]
+                                         },
+                   "customfield_10201":  null,
+                   "customfield_10202":  null,
+                   "timespent":  null,
+                   "aggregatetimespent":  null,
+                   "workratio":  -1,
+                   "issuerestriction":  {
+                                            "issuerestrictions":  {
+
+                                                                  },
+                                            "shouldDisplay":  false
+                                        },
+                   "created":  "2026-03-20T08:30:57.390+0100",
+                   "customfield_10090":  null,
+                   "customfield_10091":  null,
+                   "customfield_10092":  null,
+                   "customfield_10093":  null,
+                   "customfield_10095":  null,
+                   "customfield_10096":  null,
+                   "customfield_10097":  null,
+                   "customfield_10098":  null,
+                   "security":  null,
+                   "attachment":  [
+
+                                  ],
+                   "customfield_10080":  null,
+                   "customfield_10084":  [
+
+                                         ],
+                   "customfield_10085":  null,
+                   "customfield_10086":  null,
+                   "customfield_10087":  null,
+                   "customfield_10089":  null
+               }
+}

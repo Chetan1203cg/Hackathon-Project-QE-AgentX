@@ -1,0 +1,51 @@
+{
+  "key": "NGWD6-52543",
+  "summary": "[CMS][NBD][S135 Text Only Teaser Section] Topline changes",
+  "link": "https://vwgroup-b2b.atlassian.net/browse/NGWD6-52543",
+  "sprint": "CMS Sprint 277",
+  "type": "Task",
+  "priority": "Major",
+  "status": "In Sprint Review",
+  "component": "CMS",
+  "assignee": "Till Hohenberger",
+  "description": "CSS changes for top line as per Figma (Text only teaser section)\n1) Border radius: 20px\n2) white background:\n3) Padding added as per figma",
+  "description_adf": {
+    "type": "doc",
+    "version": 1,
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "CSS changes for top line as per Figma (Text only teaser section)"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "1) Border radius: 20px"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "2) white background:"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "3) Padding added as per figma"
+          }
+        ],
+        "attrs": {
+          "localId": "2f10f3260774"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python jira_to_testcases\\.py --jira-link \"https://vwgroup-b2b\\.atlassian\\.net/browse/NGWD6-50347\" --mode rule-based ; python jira_to_testcases\\.py --jira-link \"https://vwgroup-b2b\\.atlassian\\.net/browse/NGWD6-50349\" --mode rule-based ; python jira_to_testcases\\.py --jira-link \"https://vwgroup-b2b\\.atlassian\\.net/browse/NGWD6-50346\" --mode rule-based$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    },
+    "jiracopotilot.instanceUrl": "https://vwgroup-b2b.atlassian.net",
+    "jiracopotilot.email": "extern.chetan.raut@volkswagen.de"
+}

@@ -1,0 +1,37 @@
+{
+  "_comment": "System context for OneHub CMS / EV Hub test case generation. Loaded automatically by generate_testcases.py when component contains 'CMS'.",
+  "system": "OneHub CMS (EV Hub)",
+  "confluence_doc": "https://vwgroup-b2b.atlassian.net/wiki/spaces/NGWSYSD/pages/48316347/EV+Hub+General",
+  "summary": "OneHub CMS is the VW Group AEM-based CMS (Adobe Experience Manager, AMS/AEMaaCS). It powers market websites across all VW Group brands. Content is managed via AEM Sites (pages, templates, components) and AEM Assets (DAM, Dynamic Media/Scene7). Feature Apps (FAs) are external React micro-frontends embedded on pages. Experience Fragments (XFs) store reusable content. i18n is via AEM Translator and OneAPI i18n service.",
+  "key_concepts": {
+    "page_structure": "Pages live at /content/markets/<MARKET>/<LANG>/ (EV Hub) or /content/onehub_pkw/<MARKET>/<LANG>/. Each market has a language home (e.g. /de/de) with tools, service-configs, and feature-app configs beneath it.",
+    "templates_and_components": "Pages are built from section components (S101 Heading, S105 Mood Gallery, S108 Editorial Teaser, S110 Highlight Teaser, S112 Step By Step, S115 Focus Teaser, S117 Accordion, S122 Stage, S124 Table). Each section has Anchor & Tracking settings for deep-linking and in-page navigation.",
+    "experience_fragments": "XFs live at /content/experience-fragments/<root>/<MARKET>/<LANG>/<type>/<xf-type>/. Types: editorial_teaser (static), authors, photographers, disclaimers, personalized. Templates must be allowed on the root folder via Properties.",
+    "disclaimers": "Disclaimers are XFs under /static/disclaimers/. Types: 3=Section-based (under section), 4=Item-based (under image/text item), 5=Inline (within text), 6=Openable (clickable overlay). Page-based disclaimers appear in footer. Must be referenced via [@DIS_<id>] in text fields and added to Disclaimer Pool.",
+    "dam_and_assets": "Assets live in AEM DAM (/content/dam). Upload filter validates: max image 3MB / 2560x2560px, max video 100MB / 1920px / 510s, filename max 127 chars. Invalid assets get 'INVALID ASSET' thumbnail and cannot be published by content-editors. Webp format supported via Scene7.",
+    "dispatcher_cache": "AEM Dispatcher caches all pages. Cache is invalidated on publish via custom listeners: XF changes invalidate all referencing pages; feature toggle changes invalidate all market pages; i18n changes invalidate all pages for that language; service config changes invalidate all SSR pages.",
+    "feature_apps": "Feature Apps are configured at /content/onehub_pkw/<MARKET>/<LANG>/tools/hq-service-configs/. Placed on pages via S122 Feature App Section component. FA config changes trigger dispatcher cache invalidation for all pages using that FA.",
+    "announcement_bar": "Announcement Bar XFs live in /experience-fragments/<root>/<market>/<lang>/static/announcements/. Configured on page Properties under 'Announcement' tab. Max 120 characters copy. Pushes content down, does not overlay. Tracking: VWBasic_AnnouncementBar_Load, VWBasic_AnnouncementBarClose_Click.",
+    "cookie_consent": "Cookie consent managed via Ensighten bootstrap.js. Cookie 'SMARTDIGITAL_ENSIGHTEN_PRIVACY_BANNER_VIEWED' tracks dismissal. Supports modal and banner variants. Auto-detects browser language. Layout adjusts for mobile landscape and RTL.",
+    "section_visibility": "Each section can be conditionally shown/hidden based on myDealer state (None/Visible/Invisible) via the mydealer tab in section dialog. Known issue: avoid using on sections directly below stage or above footer.",
+    "anchor_ids": "Each section auto-generates an anchor ID from its AEM node name (max 20 chars). Can be overwritten in section dialog. Used for deep-links (#anchor-id) and in-page navigation. Must be unique per page.",
+    "ev_hub_urls": "EV Hub URLs map market-specific segments: DE=elektromobilitaet, GB=e-mobility, NO=elbil, SE=elbilar, etc. Assets use /idhub/ prefix for reverse URL mapping.",
+    "error_pages": "Custom 4xx/5xx error pages at <market>/<language>/tools/. Authors can create new error pages, but AMS/dispatcher config must be updated to activate them (requires CR for AMS).",
+    "external_link_lightbox": "Configurable per market at market root page Properties > 'External Links' tab. Internal domains whitelist uses regex. Lightbox content page at <market>/<lang>/tools/externalLinkLightbox (must be named exactly this).",
+    "focal_point": "Focal point tag set on DAM asset Properties > Tags > Asset Properties > Focal Point. After setting tag, click Edit on asset and confirm to regenerate renditions. Only the last focal point tag is used."
+  },
+  "common_preconditions": [
+    "User is logged in to AEM Author with content-editor permissions.",
+    "The target market/language page structure exists in AEM Sites.",
+    "Required XF folders exist with correct allowed templates configured.",
+    "AEM Dispatcher is running and cache invalidation is functional.",
+    "Scene7/Dynamic Media is configured and reachable from the AEM instance.",
+    "Feature App service configs are set up for the target market."
+  ],
+  "test_environments": {
+    "author": "AEM Author: https://author-<env>.adobecqms.net/",
+    "preview_on_lower_envs": "Access via CDN host header using ModHeader browser plugin. Set Host header to vhost, open via AMS env origin domain.",
+    "cache_clearing": "Publish the page or activate from AEM Author to clear Dispatcher cache for that page.",
+    "invalid_assets": "To find invalid assets: AEM Assets > Filter > Status > Approval > Rejected."
+  }
+}

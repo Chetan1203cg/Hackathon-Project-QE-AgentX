@@ -1,0 +1,706 @@
+﻿{
+    "type":  "doc",
+    "version":  1,
+    "content":  [
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "User Story:",
+                                            "marks":  [
+                                                          {
+                                                              "type":  "strong"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "As a user I would like to get better feedback while the search is in progress."
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "Business Value",
+                                            "marks":  [
+                                                          {
+                                                              "type":  "strong"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "Joy of use"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "Description",
+                                            "marks":  [
+                                                          {
+                                                              "type":  "strong"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Currently, a small loading indicator appears at the top of the list, but it is easy to miss. To make the loading state more visible and intuitive, add a “ghost content” card to the end of the expanding list. This card will clearly communicate that additional results are still being loaded."
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph"
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Design Link:",
+                                            "marks":  [
+                                                          {
+                                                              "type":  "strong"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "inlineCard",
+                                            "attrs":  {
+                                                          "url":  "https://www.figma.com/design/Mh3UEneHqYMRS6m0j9cqJr/UX-UI-Library-myDealer--DRAFT-?node-id=4138-382\u0026t=FQqCiYDOU5TjqNCH-4"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " "
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "New Brand Design Example:"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "inlineCard",
+                                            "attrs":  {
+                                                          "url":  "https://www.figma.com/design/Cz53Pylz4xiMf8r6u87KUo/myDealer-D6.5-UI-Library?node-id=1206-36019\u0026t=LhvQhzt6T4gys1ar-4"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " "
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "Acceptance Criteria:",
+                                            "marks":  [
+                                                          {
+                                                              "type":  "strong"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "AC1: “ghost content” card is visible at the end of the list while the loading is in progress (right after the first returned result) and must stay until all results are displayed."
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "AC2: keep the little spinner from the top of the list"
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "AC3: after all results have been loaded, then the “ghost” card should be removed/should disappear "
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "AC4: if no results are returned, keep the original spinner which is already implemented"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "Premises / Dependencies:",
+                                            "marks":  [
+                                                          {
+                                                              "type":  "strong"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "None"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "Contact / Partners:",
+                                            "marks":  [
+                                                          {
+                                                              "type":  "strong"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "None"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "Definition of Ready:",
+                                            "marks":  [
+                                                          {
+                                                              "type":  "strong"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Small enough to fit in one Sprint"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":minus:",
+                                                          "id":  "atlassian-minus",
+                                                          "text":  ":minus:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  Dependencies are clarified --\u003e CMS"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  There must always be a clear value"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  All relevant (not outdated!) files/docs/info etc. is attached to the ticket"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  If needed: A validated concept \u0026 design is available and linked / added to PBI"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  Acceptance Criteria exist \u0026 are short, understandable and testable"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  Prioritization done by PO"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  Not multiple unrelated features should be described in one ticket"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":minus:",
+                                                          "id":  "atlassian-minus",
+                                                          "text":  ":minus:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  i18n translations: value of newly added i18n keys"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":minus:",
+                                                          "id":  "atlassian-minus",
+                                                          "text":  ":minus:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " checked for a11y in Feature Apps"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":minus:",
+                                                          "id":  "atlassian-minus",
+                                                          "text":  ":minus:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  Tracking requirements are considered"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  Estimated (Story Points)"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  Program Label/OKRS"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":minus:",
+                                                          "id":  "atlassian-minus",
+                                                          "text":  ":minus:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  "  Cookbook relevant"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Check Design/Wordings/Icons regarding consistency (OneHub in general DCC in specific)"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":check_mark:",
+                                                          "id":  "atlassian-check_mark",
+                                                          "text":  ":check_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Naming conventions"
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Definition of Done:",
+                                            "marks":  [
+                                                          {
+                                                              "type":  "strong"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  [
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Tracking is implemented if applicable"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Integration test are added if needed"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Documentation is added"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " FOSS list updated if needed"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " i18n schema is updated and documented if needed"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Tested in OneHub CMS integrator from a Dev during implementation"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Internal development pages are updated"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Design QA\u0027ed (if frontend involved)"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " AA compliant"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " QA done (successfully)"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Test documentation from QA"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " Tested along browser matrix"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " AC are fulfilled"
+                                        },
+                                        {
+                                            "type":  "hardBreak"
+                                        },
+                                        {
+                                            "type":  "emoji",
+                                            "attrs":  {
+                                                          "shortName":  ":cross_mark:",
+                                                          "id":  "atlassian-cross_mark",
+                                                          "text":  ":cross_mark:"
+                                                      }
+                                        },
+                                        {
+                                            "type":  "text",
+                                            "text":  " PO approval"
+                                        }
+                                    ]
+                    }
+                ]
+}

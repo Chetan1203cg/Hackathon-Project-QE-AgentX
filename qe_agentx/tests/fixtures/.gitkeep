@@ -1,0 +1,6 @@
+"""
+tests/fixtures/story_simple.json
+==================================
+Reuses the real story from data/ as a test fixture.
+Symlinked at test time; this file is the actual fixture content.
+"""

@@ -1,0 +1,48 @@
+{
+  "key": "NGWD6-52184",
+  "summary": "[CMS][A11Y][WCAG 2.2] 2.4.11 Focus Not Obscured | Search Layer",
+  "link": "https://vwgroup-b2b.atlassian.net/browse/NGWD6-52184",
+  "sprint": "CMS Sprint 278",
+  "type": "Task",
+  "priority": "Major",
+  "status": "Closed",
+  "component": "CMS",
+  "assignee": "Raut, Chetan (EXTERN: Capgemini)",
+  "description": "Introduction\nThis ticket implements a specific WCAG 2.2 issue identified in the WCAG 2.2 analysis.\n\nAffected CMS Section / Feature App: Search Layer\nSuccess Criterion: 2.4.11 Focus Not Obscured (Minimum)\n\nCurrent Behavior (As-Is)\nInput focus is unclear: the search input has a 2px bottom border instead of the standard focus treatment.\n\nAccessibility Impact\nUsers may not be able to clearly perceive that the input has keyboard focus.\n\nTarget Behavior (To-Be)\nThe Search Layer input has a more visible focus state, consistent with the focus styling used elsewhere. The focus indicator must remain unobscured.\n\nDependencies\nUI/UX input required: Yes.\nContent changes required: No.\n\nAcceptance Criteria\n- WCAG 2.2 Success Criterion 2.4.11 Focus Not Obscured (Minimum) is met.\n- The Search Layer is fully usable without a mouse.\n- Focus and interactive elements are visually and programmatically perceivable.\n- The solution works across relevant viewports.\n- The approved UI/UX focus treatment is applied consistently.\n\nTesting Scope\nValidate both Classic Search and AI Search variants. Verify opening, focusing, searching, navigating results, and closing the Search Layer with keyboard only.",
+  "description_adf": {
+    "type": "doc",
+    "version": 1,
+    "content": [
+      {
+        "type": "heading",
+        "attrs": { "level": 4 },
+        "content": [{ "type": "text", "text": "Acceptance Criteria" }]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "WCAG 2.2 Success Criterion 2.4.11 Focus Not Obscured (Minimum) is met." }] }]
+          },
+          {
+            "type": "listItem",
+            "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "The Search Layer is fully usable without a mouse." }] }]
+          },
+          {
+            "type": "listItem",
+            "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Focus and interactive elements are visually and programmatically perceivable." }] }]
+          },
+          {
+            "type": "listItem",
+            "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "The solution works across relevant viewports." }] }]
+          },
+          {
+            "type": "listItem",
+            "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "The approved UI/UX focus treatment is applied consistently." }] }]
+          }
+        ]
+      }
+    ]
+  }
+}

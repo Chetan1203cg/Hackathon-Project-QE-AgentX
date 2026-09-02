@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: ["feature/*", "develop"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        working-directory: qe_agentx
+        run: pip install -r requirements.txt
+
+      - name: Ruff lint
+        working-directory: qe_agentx
+        run: ruff check .
+
+      - name: Black format check
+        working-directory: qe_agentx
+        run: black --check .
+
+      - name: Run unit tests (mocked LLM)
+        working-directory: qe_agentx
+        env:
+          AZURE_OPENAI_ENDPOINT: "https://mock.openai.azure.com/"
+          AZURE_OPENAI_KEY: "mock-key-for-ci"
+          JIRA_BASE_URL: "https://mock.atlassian.net"
+          JIRA_EMAIL: "ci@test.com"
+          JIRA_API_TOKEN: "mock-token"
+        run: pytest tests/unit -m unit -v --cov=agents --cov=core --cov-report=xml
+
+      - name: Upload coverage report
+        uses: codecov/codecov-action@v4
+        with:
+          files: qe_agentx/coverage.xml
+          fail_ci_if_error: false
+
+      - name: Safety dependency scan
+        working-directory: qe_agentx
+        run: pip install safety && safety check -r requirements.txt

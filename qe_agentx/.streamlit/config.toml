@@ -1,0 +1,37 @@
+[theme]
+base = "light"
+primaryColor = "#0078D4"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F4F6"
+textColor = "#111827"
+linkColor = "#2563EB"
+borderColor = "#D1D5DB"
+redColor = "#DC2626"
+orangeColor = "#D97706"
+greenColor = "#16A34A"
+blueColor = "#2563EB"
+grayColor = "#6B7280"
+chartCategoricalColors = ["#2563EB", "#16A34A", "#D97706", "#DC2626", "#6B7280", "#0891B2"]
+dataframeBorderColor = "#D1D5DB"
+dataframeHeaderBackgroundColor = "#F3F4F6"
+font = "'IBM Plex Sans':https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+headingFont = "'IBM Plex Sans':https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&display=swap"
+baseFontSize = 14
+baseFontWeight = 400
+headingFontSizes = ["30px", "22px", "18px", "16px", "14px", "12px"]
+headingFontWeights = [600, 600, 600, 500, 500, 500]
+baseRadius = "6px"
+buttonRadius = "6px"
+showWidgetBorder = true
+showSidebarBorder = true
+linkUnderline = false
+
+[theme.sidebar]
+backgroundColor = "#F3F4F6"
+secondaryBackgroundColor = "#E5E7EB"
+textColor = "#111827"
+borderColor = "#D1D5DB"
+primaryColor = "#0078D4"
+
+[server]
+maxUploadSize = 20

@@ -1,0 +1,34 @@
+{
+  "_comment": "System context for myDealer test case generation. Loaded automatically by generate_testcases.py.",
+  "system": "myDealer",
+  "confluence_doc": "https://vwgroup-b2b.atlassian.net/wiki/spaces/FEDEVRO/pages/42732289/10.+System+Documentation+My+Dealer",
+  "summary": "myDealer is the VW Group dealer portal, integrated into the OneHub CMS (AEM). Dealers get personalized pages served via Feature Apps. Content is stored in the AEM Headless CMS as Content Fragments. Dealer details (address, departments, contacts, services, business hours) come from SDS (Sales Data Service). i18n is managed via Phrase (myDealer app) and the Onehub CMS Translator.",
+  "key_concepts": {
+    "headless_cms_structure": "Content fragments follow the path: <project>/<market>/dealers/dg_<dealergroup>/<dealer_id>/<feature-folder>. Central (market-wide) content lives under <project>/<market>/central/.",
+    "dealer_state": "Dealer state shows the selected dealer in the Topbar and Navigation Flyout. It can be persisted via cookies (24h or 365 days). Zero state = no dealer selected (Pin icon visible in topbar).",
+    "feature_apps": "MyDealer content is rendered via Feature Apps (FAs): stage, contacts, partner-services, offers, next-steps, teaser, table. FAs are configured in AEM and added to master templates or pages via the S122 Feature App Section component.",
+    "route_paths": "Each dealer receives a route path pointing to their content folder in the headless CMS. Central and dealer-specific folders use separate paths. For CF types, route paths define whether content lives in /central/ or /dealers/<id>/.",
+    "disclaimers": "Disclaimers are Content Fragments (model: Disclaimer Item). Types: 3=Section-based (below section), 4=Item-based (below image), 6=Openable (clickable overlay). Must be added to the 'Disclaimer Pool' field of the section CF to appear.",
+    "placeholders": "Dynamic content via placeholders: ${MY-KEY} in central teasers, resolved by dealer-specific values at /dealers/<id>/placeholders/placeholders. SDS data accessible via dealer.* prefix (e.g. ${dealer.address.postalCode}).",
+    "content_tagging": "Tags are defined centrally at /central/tags/. Tag types: Offer Category (filter bar), Offer Badge Orange (highlighted badge), Offer Badge Grey (info badge), Offer Highlighted (first in gallery), Offer Stage (promoted on stage FA).",
+    "template_page": "Offer pages are Content Fragments using the Template Page model. They support visibility rules, start/end date expiration, and tags/badges.",
+    "feature_toggles": "Toggles managed at three levels: ACS (market-level, e.g. enableStageClosedDays), Service Config 'mydealer-headless-cms-live' (technical, e.g. enableEditor, enableDccCenterFa), CMS homepage properties (e.g. enableZeroState, enablePersistDealerState).",
+    "publishing": "Publishing a headless CF also triggers republish of the related dealer config page in OneHub. Preview mode: ?preview=true (lower envs) or via CA preview domain (production).",
+    "sds": "SDS provides dealer details: address, departments (CENTRAL, SALES, SERVICE...), contact info, business hours, services list, social media, features, categories. Whatsapp number configured under CENTRAL department.",
+    "tracking": "Tracking can be disabled per dealer at the dealer config page. MyDealer tracking only; CMS tracking is unaffected.",
+    "aem_blueprint": "New dealers are created by copying the blueprint dealer folder at /content/dam/mydealer-headless-blueprint/ and renaming (move) with the correct dealer_id.",
+    "multi_market_nfz": "Commercial vehicles (NFZ) dealers can share headless content with private vehicle (PKW) market if service config paths are identical and dealer IDs (Betriebskennzeichen) are unique across both markets."
+  },
+  "common_preconditions": [
+    "User is logged in to AEM as a content editor with edit permissions.",
+    "Headless CMS (AEM) is accessible and the myDealer content fragment structure is set up correctly.",
+    "SDS endpoint is configured and returning dealer data for the test dealer.",
+    "Feature App configurations are present in OneHub CMS for the target market.",
+    "Test dealer's content fragments are published in the headless CMS."
+  ],
+  "test_environments": {
+    "preview": "Add ?preview=true to the dealer page URL on lower environments.",
+    "editor_mode": "Add ?edit=true&preview=true and enable 'enableEditor' feature toggle in mydealer-headless-cms-live service config.",
+    "dealer_state_reset": "Delete 'mydealer-dealer-id' from session storage and cookies; remove myDealerId URL param."
+  }
+}

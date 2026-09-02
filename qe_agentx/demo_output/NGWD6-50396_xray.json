@@ -1,0 +1,370 @@
+{
+  "story_id": "NGWD6-50396",
+  "test_count": 7,
+  "tests": [
+    {
+      "testtype": "Manual",
+      "summary": "TC-001 – Feature Cluster displays NBD'26 design when active",
+      "description": "Verify that the Feature Cluster Section component renders with the new NBD'26 FIGMA design specifications",
+      "labels": [
+        "regression",
+        "smoke",
+        "happy_path",
+        "visual"
+      ],
+      "priority": "High",
+      "steps": [
+        {
+          "action": "Open the CMS page containing the Feature Cluster Section component",
+          "result": "",
+          "data": ""
+        },
+        {
+          "action": "Verify that the component title matches the NBD'26 FIGMA spec",
+          "result": "Title styling, font size, and colour match the FIGMA mockup exactly",
+          "data": ""
+        },
+        {
+          "action": "Verify each named item in the cluster displays with correct styling",
+          "result": "All items have correct padding, borders, background colour per FIGMA spec",
+          "data": ""
+        },
+        {
+          "action": "Verify layout alignment and spacing between items",
+          "result": "Gaps and alignment match FIGMA; no overlaps; responsive padding applied",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-50396"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-001",
+        "ac_ref": "AC-01",
+        "scenario_node_ref": "SN-001",
+        "gherkin": "Given the Feature Cluster component is rendered on a CMS page\nAnd the NBD'26 feature toggle is ENABLED\nWhen the page loads\nThen the component displays with NBD'26 design specifications\nAnd all named items are visible and properly styled"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-001",
+          "tc_ref": "TC-001",
+          "category": "valid",
+          "description": "Valid Feature Cluster with all named items populated",
+          "data": {
+            "component_title": "Feature Cluster",
+            "feature_toggle_state": "ENABLED",
+            "named_items": [
+              "Item 1",
+              "Item 2",
+              "Item 3",
+              "Item 4"
+            ],
+            "market": "en-US"
+          },
+          "notes": null,
+          "requires_provisioning": false
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "TC-002 – Feature Cluster responsive at 960px tablet viewport",
+      "description": "Verify responsive layout at tablet breakpoint (960px)",
+      "labels": [
+        "regression",
+        "responsive",
+        "boundary"
+      ],
+      "priority": "Medium",
+      "steps": [
+        {
+          "action": "Set browser viewport to 960px width",
+          "result": "",
+          "data": ""
+        },
+        {
+          "action": "Navigate to page with Feature Cluster",
+          "result": "Component layout adapts; no horizontal scroll",
+          "data": ""
+        },
+        {
+          "action": "Verify that 'All Features' box moves to right side of layout",
+          "result": "Box is positioned right; space is optimised per NBD'26 tablet spec",
+          "data": ""
+        },
+        {
+          "action": "Verify font sizes and padding scale appropriately",
+          "result": "Text is readable; spacing is proportional; no clipping occurs",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-50396"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-002",
+        "ac_ref": "AC-01",
+        "scenario_node_ref": "SN-002",
+        "gherkin": "Given viewport is 960px wide\nWhen Feature Cluster loads\nThen layout adapts for tablet\nAnd All Features box aligns right\nAnd text remains readable"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-002",
+          "tc_ref": "TC-002",
+          "category": "boundary",
+          "description": "Viewport at exact 960px tablet breakpoint",
+          "data": {
+            "viewport_width": 960,
+            "viewport_height": 1024,
+            "device_type": "tablet",
+            "orientation": "portrait"
+          },
+          "notes": null,
+          "requires_provisioning": false
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "TC-003 – Toggle ON: NBD'26 design visible",
+      "description": "Verify that enabling the feature toggle shows the NBD'26 design",
+      "labels": [
+        "feature_toggle",
+        "smoke"
+      ],
+      "priority": "High",
+      "steps": [
+        {
+          "action": "Verify feature toggle status is ON",
+          "result": "",
+          "data": ""
+        },
+        {
+          "action": "Load page with Feature Cluster",
+          "result": "",
+          "data": ""
+        },
+        {
+          "action": "Verify NBD'26 design elements are rendered (new styles, layout, colors)",
+          "result": "New design is visible; legacy styles are not applied",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-50396"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-003",
+        "ac_ref": "AC-02",
+        "scenario_node_ref": "SN-003",
+        "gherkin": "Given feature toggle is ON\nWhen page renders\nThen NBD'26 design is displayed"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-003",
+          "tc_ref": "TC-003",
+          "category": "valid",
+          "description": "Feature toggle enabled state",
+          "data": {
+            "toggle_state": "ON",
+            "nbd_design_active": true
+          },
+          "notes": null,
+          "requires_provisioning": false
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "TC-004 – Toggle OFF: legacy design fallback",
+      "description": "Verify that disabling the feature toggle shows the legacy design",
+      "labels": [
+        "feature_toggle",
+        "smoke"
+      ],
+      "priority": "High",
+      "steps": [
+        {
+          "action": "Verify feature toggle status is OFF",
+          "result": "",
+          "data": ""
+        },
+        {
+          "action": "Load page with Feature Cluster",
+          "result": "",
+          "data": ""
+        },
+        {
+          "action": "Verify legacy design is rendered (old styles, layout, colors)",
+          "result": "Legacy design is visible; no new NBD'26 elements appear",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-50396"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-004",
+        "ac_ref": "AC-02",
+        "scenario_node_ref": "SN-004",
+        "gherkin": "Given feature toggle is OFF\nWhen page renders\nThen legacy design is displayed"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-004",
+          "tc_ref": "TC-004",
+          "category": "valid",
+          "description": "Feature toggle disabled state — legacy design",
+          "data": {
+            "toggle_state": "OFF",
+            "nbd_design_active": false
+          },
+          "notes": null,
+          "requires_provisioning": false
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "TC-005 – Toggle runtime switch updates design dynamically",
+      "description": "Verify design updates when toggle is switched during an active session (no reload)",
+      "labels": [
+        "feature_toggle",
+        "negative"
+      ],
+      "priority": "Medium",
+      "steps": [
+        {
+          "action": "Open Feature Cluster page with toggle OFF",
+          "result": "Legacy design visible",
+          "data": ""
+        },
+        {
+          "action": "Call feature flag API to toggle ON (mid-session)",
+          "result": "",
+          "data": ""
+        },
+        {
+          "action": "Verify Feature Cluster updates to NBD'26 design without page reload",
+          "result": "Design updates in real-time; smooth transition; no page flicker",
+          "data": ""
+        },
+        {
+          "action": "Check browser console for errors",
+          "result": "No JavaScript errors; no CSS conflicts logged",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-50396"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-005",
+        "ac_ref": "AC-02",
+        "scenario_node_ref": "SN-005",
+        "gherkin": "Given Feature Cluster loaded with toggle OFF\nWhen feature flag is toggled to ON via API\nThen design updates immediately\nAnd no page reload occurs\nAnd no console errors appear"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-005",
+          "tc_ref": "TC-005",
+          "category": "invalid",
+          "description": "Invalid state: toggle switches mid-session without proper state management",
+          "data": {
+            "initial_toggle": "OFF",
+            "api_switch_to": "ON",
+            "page_reload_triggered": false
+          },
+          "notes": "Tests error handling when state sync fails",
+          "requires_provisioning": true
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "TC-006 – Storybook documents Feature Cluster NBD'26 variant",
+      "description": "Verify Storybook contains updated Feature Cluster component documentation",
+      "labels": [
+        "documentation"
+      ],
+      "priority": "Low",
+      "steps": [
+        {
+          "action": "Open Storybook and navigate to Feature Cluster story",
+          "result": "",
+          "data": ""
+        },
+        {
+          "action": "Verify NBD'26 variant exists in the component stories",
+          "result": "Variant is listed and renders correctly",
+          "data": ""
+        },
+        {
+          "action": "Verify component props are documented",
+          "result": "Props table shows all inputs with descriptions and types",
+          "data": ""
+        },
+        {
+          "action": "Verify use case examples are provided",
+          "result": "Multiple variants and usage examples are displayed",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-50396"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-006",
+        "ac_ref": "AC-03",
+        "scenario_node_ref": "SN-006",
+        "gherkin": null
+      },
+      "datasets": []
+    },
+    {
+      "testtype": "Manual",
+      "summary": "TC-007 – SysDoc updated with Feature Cluster specs",
+      "description": "Verify System Documentation reflects NBD'26 Feature Cluster changes",
+      "labels": [
+        "documentation"
+      ],
+      "priority": "Low",
+      "steps": [
+        {
+          "action": "Navigate to Feature Cluster section in SysDoc",
+          "result": "",
+          "data": ""
+        },
+        {
+          "action": "Verify updated component specifications are documented",
+          "result": "New design specs, props, and behaviours are described",
+          "data": ""
+        },
+        {
+          "action": "Verify links to FIGMA mockups are included",
+          "result": "FIGMA design reference links are present and valid",
+          "data": ""
+        },
+        {
+          "action": "Verify version history shows recent update",
+          "result": "Update timestamp and author are recorded",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-50396"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-007",
+        "ac_ref": "AC-04",
+        "scenario_node_ref": "SN-007",
+        "gherkin": null
+      },
+      "datasets": []
+    }
+  ],
+  "rtm_summary": {
+    "total_rows": 7,
+    "generated_at": "2026-09-01T10:20:20.970295+00:00"
+  }
+}

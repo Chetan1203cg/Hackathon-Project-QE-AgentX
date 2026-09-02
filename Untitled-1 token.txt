@@ -1,0 +1,3 @@
+JIRA_BASE_URL=https://vwgroup-b2b.atlassian.net
+JIRA_EMAIL=extern.chetan.raut@volkswagen.de
+JIRA_API_TOKEN=<paste-your-new-token-here> ATATT3xFfGF0Rpv9cn4yfGeuEysfM0YWdMuO-z3Yxer-76SkUUA4P9cVzOp2HFStKJZ-v6fgGXuBcCtXAIwahYINJyygNzfCX-3CmV4dTRg62zxTfxepVEhquLyUsdFnt2dPXuC2uWAWOpIBFu_oscxe5tzbuh5v06JI-DEeb63RlHFKZxHfbZg=392DBE6E

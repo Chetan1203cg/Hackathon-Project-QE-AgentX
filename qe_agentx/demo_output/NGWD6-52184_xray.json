@@ -1,0 +1,363 @@
+{
+  "story_id": "NGWD6-52184",
+  "test_count": 7,
+  "tests": [
+    {
+      "testtype": "Manual",
+      "summary": "Classic Search input has a visible, unobscured focus indicator",
+      "description": "Validate the Classic Search input focus state against WCAG 2.4.11.",
+      "labels": [
+        "accessibility",
+        "happy_path",
+        "keyboard",
+        "classic_search"
+      ],
+      "priority": "High",
+      "steps": [
+        {
+          "action": "Open Classic Search with the keyboard",
+          "result": "The layer opens and focus enters the layer",
+          "data": ""
+        },
+        {
+          "action": "Tab to the search input",
+          "result": "The input receives a clearly visible focus indicator",
+          "data": ""
+        },
+        {
+          "action": "Check the input against surrounding overlay and header content",
+          "result": "The focused input is not fully obscured",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-52184"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-001",
+        "ac_ref": "AC-01",
+        "scenario_node_ref": "SN-001",
+        "gherkin": "Given the Search Layer is available\nWhen a user completes classic search input has a visible, unobscured focus indicator\nThen the expected accessibility behavior is met"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-001",
+          "tc_ref": "TC-001",
+          "category": "valid",
+          "description": "Classic Search default desktop state",
+          "data": {
+            "search_variant": "classic",
+            "viewport": "desktop",
+            "query": "ID. Buzz"
+          },
+          "notes": null,
+          "requires_provisioning": false
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "AI Search focused input remains visible at mobile breakpoint",
+      "description": "Validate focus visibility in AI Search at 375px width.",
+      "labels": [
+        "accessibility",
+        "boundary",
+        "responsive",
+        "ai_search"
+      ],
+      "priority": "High",
+      "steps": [
+        {
+          "action": "Open AI Search with the keyboard",
+          "result": "The layer opens",
+          "data": ""
+        },
+        {
+          "action": "Tab to the search input",
+          "result": "The input receives focus",
+          "data": ""
+        },
+        {
+          "action": "Inspect focused input at the mobile viewport",
+          "result": "Focus indicator and input remain visible and are not covered",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-52184"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-002",
+        "ac_ref": "AC-01",
+        "scenario_node_ref": "SN-002",
+        "gherkin": "Given the Search Layer is available\nWhen a user completes ai search focused input remains visible at mobile breakpoint\nThen the expected accessibility behavior is met"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-002",
+          "tc_ref": "TC-002",
+          "category": "boundary",
+          "description": "AI Search mobile viewport",
+          "data": {
+            "search_variant": "ai",
+            "viewport_width": 375,
+            "viewport_height": 667,
+            "query": "electric vehicles"
+          },
+          "notes": null,
+          "requires_provisioning": false
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "Complete the Classic Search journey using keyboard only",
+      "description": "Validate opening, searching, selecting a result, and closing Classic Search without a mouse.",
+      "labels": [
+        "accessibility",
+        "happy_path",
+        "keyboard",
+        "classic_search"
+      ],
+      "priority": "High",
+      "steps": [
+        {
+          "action": "Tab to and activate the Search trigger",
+          "result": "Classic Search opens",
+          "data": ""
+        },
+        {
+          "action": "Type a valid query and tab to a result",
+          "result": "Results are reachable in logical focus order",
+          "data": ""
+        },
+        {
+          "action": "Activate a result, reopen Search, and press Escape",
+          "result": "The result opens and closing returns focus to the trigger",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-52184"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-003",
+        "ac_ref": "AC-02",
+        "scenario_node_ref": "SN-003",
+        "gherkin": "Given the Search Layer is available\nWhen a user completes complete the classic search journey using keyboard only\nThen the expected accessibility behavior is met"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-003",
+          "tc_ref": "TC-003",
+          "category": "valid",
+          "description": "Classic Search query with a selectable result",
+          "data": {
+            "search_variant": "classic",
+            "query": "Golf",
+            "expected_result_available": true
+          },
+          "notes": null,
+          "requires_provisioning": false
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "Complete the AI Search journey using keyboard only",
+      "description": "Validate the keyboard-only flow in AI Search.",
+      "labels": [
+        "accessibility",
+        "alternate_flow",
+        "keyboard",
+        "ai_search"
+      ],
+      "priority": "High",
+      "steps": [
+        {
+          "action": "Tab to and activate the AI Search trigger",
+          "result": "AI Search opens",
+          "data": ""
+        },
+        {
+          "action": "Type a valid query and navigate suggestions or results",
+          "result": "All interactive content is keyboard reachable",
+          "data": ""
+        },
+        {
+          "action": "Close the layer using Escape or its close control",
+          "result": "Focus returns to the search trigger",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-52184"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-004",
+        "ac_ref": "AC-02",
+        "scenario_node_ref": "SN-004",
+        "gherkin": "Given the Search Layer is available\nWhen a user completes complete the ai search journey using keyboard only\nThen the expected accessibility behavior is met"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-004",
+          "tc_ref": "TC-004",
+          "category": "valid",
+          "description": "AI Search query with suggestions",
+          "data": {
+            "search_variant": "ai",
+            "query": "charging",
+            "expected_suggestion_available": true
+          },
+          "notes": null,
+          "requires_provisioning": false
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "Search Layer focus is programmatically perceivable",
+      "description": "Validate semantic exposure of the focused input and close control.",
+      "labels": [
+        "accessibility",
+        "happy_path",
+        "screen_reader"
+      ],
+      "priority": "Medium",
+      "steps": [
+        {
+          "action": "Open each Search Layer variant and focus the input",
+          "result": "Input is focused",
+          "data": ""
+        },
+        {
+          "action": "Inspect the input in the accessibility tree",
+          "result": "Role, accessible name, and focused state are exposed",
+          "data": ""
+        },
+        {
+          "action": "Focus the close control and inspect it",
+          "result": "The control has an accessible name and exposed focus",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-52184"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-005",
+        "ac_ref": "AC-03",
+        "scenario_node_ref": "SN-005",
+        "gherkin": "Given the Search Layer is available\nWhen a user completes search layer focus is programmatically perceivable\nThen the expected accessibility behavior is met"
+      },
+      "datasets": []
+    },
+    {
+      "testtype": "Manual",
+      "summary": "Search Layer focus treatment works across desktop, tablet, and mobile",
+      "description": "Validate both search variants at responsive breakpoints.",
+      "labels": [
+        "accessibility",
+        "boundary",
+        "responsive"
+      ],
+      "priority": "High",
+      "steps": [
+        {
+          "action": "Repeat the input focus check at desktop viewport",
+          "result": "Focus is visible and unobscured",
+          "data": ""
+        },
+        {
+          "action": "Repeat at tablet viewport",
+          "result": "Focus is visible and unobscured",
+          "data": ""
+        },
+        {
+          "action": "Repeat at mobile viewport",
+          "result": "Focus is visible and unobscured",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-52184"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-006",
+        "ac_ref": "AC-04",
+        "scenario_node_ref": "SN-006",
+        "gherkin": "Given the Search Layer is available\nWhen a user completes search layer focus treatment works across desktop, tablet, and mobile\nThen the expected accessibility behavior is met"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-005",
+          "tc_ref": "TC-006",
+          "category": "boundary",
+          "description": "Responsive viewport matrix",
+          "data": {
+            "desktop_width": 1280,
+            "tablet_width": 768,
+            "mobile_width": 375
+          },
+          "notes": null,
+          "requires_provisioning": false
+        }
+      ]
+    },
+    {
+      "testtype": "Manual",
+      "summary": "Classic and AI Search use the approved consistent focus treatment",
+      "description": "Compare focus style with the approved UI/UX reference.",
+      "labels": [
+        "accessibility",
+        "happy_path",
+        "visual_regression"
+      ],
+      "priority": "Medium",
+      "steps": [
+        {
+          "action": "Focus the Classic Search input and close control",
+          "result": "Focus style matches the approved reference",
+          "data": ""
+        },
+        {
+          "action": "Focus the AI Search input and close control",
+          "result": "Focus style matches the approved reference",
+          "data": ""
+        },
+        {
+          "action": "Compare both variants",
+          "result": "No variant uses only the legacy bottom-border treatment",
+          "data": ""
+        }
+      ],
+      "requirements": [
+        "NGWD6-52184"
+      ],
+      "xray_metadata": {
+        "internal_id": "TC-007",
+        "ac_ref": "AC-05",
+        "scenario_node_ref": "SN-007",
+        "gherkin": "Given the Search Layer is available\nWhen a user completes classic and ai search use the approved consistent focus treatment\nThen the expected accessibility behavior is met"
+      },
+      "datasets": [
+        {
+          "dataset_id": "DS-006",
+          "tc_ref": "TC-007",
+          "category": "valid",
+          "description": "Approved focus style reference",
+          "data": {
+            "reference": "Approved site-wide UI/UX focus treatment"
+          },
+          "notes": "Confirm the final design token with UI/UX.",
+          "requires_provisioning": true
+        }
+      ]
+    }
+  ],
+  "rtm_summary": {
+    "total_rows": 7,
+    "generated_at": "2026-08-19T14:41:00.583113+00:00"
+  }
+}

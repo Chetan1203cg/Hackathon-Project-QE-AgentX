@@ -1,0 +1,960 @@
+{
+  "key": "NGWD6-50396",
+  "summary": "🔵 [CMS][NBD'26] S127 Feature Cluster Section (Simple) - Update as per new design",
+  "link": "https://vwgroup-b2b.atlassian.net/browse/NGWD6-50396",
+  "sprint": "CMS Sprint 273",
+  "type": "Story",
+  "priority": "Major",
+  "status": "Development Done",
+  "component": "CMS",
+  "assignee": "Zayin, Hakan (EXTERN: Capgemini)",
+  "description": "Introduction\nAs a CMS Product Owner\nI want all CMS components to be implemented according to the NBD'26 specifications in FIGMA\nSo that the website meets the new NBD’26 design requirements after activating the new themeNotes S127  Feature Cluster Section( simple) 1. whole table for All Features will be changed according to new Figma\n2. 960px (tablet view) à box will be in right side\n3. 1280px above headline and subtext will be little bit aligned with All Features Box\n\nRequired updates:- Update Storybook documentation\n- Update SysDoc\nQ&AQuestionsRequesterDue DateAnswer    ACs- Named items, section match the NBD’26 specifications from FIGMA\n- NBD changes are hidden behind the feature activation toggle on market level (later on a global OSGI environment variable / has to be created)\nDefinition of Ready The Product Backlog Item identifies the role (user perspective), goal and benefit. If possible, the business value is also named.  \n The PBI was checked for its impact on program and CMS OKRs (Objectives and key results) and, if available, labelled and presented.  \n The PBI describes a single feature and purpose.  \n The PBI does not conflict with the LSG or any other prior design, UI or UX agreement.  \n Services that are required are available, tested and documented.  \n There are no unresolved third-party dependencies.  \n If PBI has any (known) edge cases, they must be clearly identified.  \n Additional tracking, accessibility, SEO and RTL requirements must be defined.  \n ACs are understandable, short and testable.  \n PBI contains just relevant attachments.  \n If all previous points from the DoR list are met, the story is estimated.  \n The PBI doesn't exceed 13 Story Points. 13SP PBIs should always be considered for slicing.\n Does the implementation need Feature Toggle?Definition of Done Documentation is updated, reviewed by QA, and linked to the VW JIRA ticket:- Application documentation (SysDoc)\n- Storybook documentation\n- Technical documentation for CMS & README files for Feature Apps (GitHub)\n Accessibility compliance has been verified through:- A manual accessibility check ensuring compliance with WCAG AA-level requirements.\n- An automated accessibility scan using AXE/Lighthouse, with no major open issues remaining.\nDocumentation- TBD by dev team\nApplication documentation (SysDoc) [Add link|link]\nStorybook documentation [Add link|link]\nTechnical documentation for CMS & README files for Feature Apps (GitHub) [Add link|link]\nNBD Changes for Testing – S127 Feature Cluster SectionChanges implemented:- Updated the All Features table according to the new Figma design.\n- From 960px tablet view, the feature box is positioned on the right side.\n- From 1280px and above, headline and subtext alignment has been adjusted to align better with the All Features box.\n- Changes are hidden behind the market-level NBD feature activation toggle.",
+  "description_adf": {
+    "type": "doc",
+    "version": 1,
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Introduction",
+            "marks": [
+              {
+                "type": "strong"
+              },
+              {
+                "type": "underline"
+              }
+            ]
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "As a",
+            "marks": [
+              {
+                "type": "strong"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " CMS Product Owner"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "I want",
+            "marks": [
+              {
+                "type": "strong"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " all CMS components to be implemented according to the NBD'26 specifications in FIGMA"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "So that",
+            "marks": [
+              {
+                "type": "strong"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " the website meets the new NBD’26 design requirements after activating the new theme"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Notes",
+            "marks": [
+              {
+                "type": "strong"
+              },
+              {
+                "type": "underline"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://www.figma.com/design/xiqq0x1h8qTyyqUCD85Xjv/CMS-Library?node-id=10320-2361&m=dev"
+                }
+              },
+              {
+                "type": "text",
+                "text": " "
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "S127  Feature Cluster Section( simple)",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " ",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "whole table for All Features will be changed according to new Figma"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ",
+                        "marks": [
+                          {
+                            "type": "code"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "960px (tablet view) à box will be in right side"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ",
+                        "marks": [
+                          {
+                            "type": "code"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1280px above headline and subtext will be little bit aligned with All Features Box "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "attrs": {
+          "panelType": "error"
+        }
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Required updates:"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Update Storybook documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Update SysDoc"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Q&A",
+            "marks": [
+              {
+                "type": "strong"
+              },
+              {
+                "type": "underline"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "attrs": {
+          "isNumberColumnEnabled": false,
+          "layout": "center",
+          "localId": "be8c274f-5371-4e15-b5fe-903d113ace3e"
+        },
+        "content": [
+          {
+            "type": "tableRow",
+            "content": [
+              {
+                "type": "tableHeader",
+                "attrs": {},
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Questions",
+                        "marks": [
+                          {
+                            "type": "strong"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableHeader",
+                "attrs": {},
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Requester",
+                        "marks": [
+                          {
+                            "type": "strong"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableHeader",
+                "attrs": {},
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Due Date",
+                        "marks": [
+                          {
+                            "type": "strong"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableHeader",
+                "attrs": {},
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Answer",
+                        "marks": [
+                          {
+                            "type": "strong"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "tableRow",
+            "content": [
+              {
+                "type": "tableCell",
+                "attrs": {},
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableCell",
+                "attrs": {},
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableCell",
+                "attrs": {},
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableCell",
+                "attrs": {},
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "ACs",
+            "marks": [
+              {
+                "type": "strong"
+              },
+              {
+                "type": "underline"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Named items, section match the NBD’26 specifications from FIGMA "
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "NBD changes are hidden behind the feature activation toggle on market level (later on a global OSGI environment variable / has to be created)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Definition of Ready",
+            "marks": [
+              {
+                "type": "strong"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":check_mark:",
+              "id": "atlassian-check_mark",
+              "text": ":check_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " The Product Backlog Item identifies the role (user perspective), goal and benefit. If possible, the business value is also named.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " The PBI was checked for its impact on program and CMS OKRs (Objectives and key results) and, if available, labelled and presented.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " The PBI describes a single feature and purpose.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " The PBI does not conflict with the LSG or any other prior design, UI or UX agreement.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " Services that are required are available, tested and documented.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " There are no unresolved third-party dependencies.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " If PBI has any (known) edge cases, they must be clearly identified.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " Additional tracking, accessibility, SEO and RTL requirements must be defined.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " ACs are understandable, short and testable.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " PBI contains just relevant attachments.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " If all previous points from the DoR list are met, the story is estimated.  "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " The PBI doesn't exceed 13 Story Points. 13SP PBIs should always be considered for slicing."
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " Does the implementation need Feature Toggle?"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Definition of Done",
+            "marks": [
+              {
+                "type": "strong"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " Documentation is updated, reviewed by QA, and linked to the VW JIRA ticket:"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Application documentation (SysDoc)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Storybook documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Technical documentation for CMS & README files for Feature Apps (GitHub)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "emoji",
+            "attrs": {
+              "shortName": ":cross_mark:",
+              "id": "atlassian-cross_mark",
+              "text": ":cross_mark:"
+            }
+          },
+          {
+            "type": "text",
+            "text": " Accessibility compliance has been verified through:"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "A manual accessibility check ensuring compliance with WCAG AA-level requirements."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "An automated accessibility scan using AXE/Lighthouse, with no major open issues remaining."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Documentation",
+            "marks": [
+              {
+                "type": "strong"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "TBD by dev team"
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Application documentation (SysDoc) [Add link|link]"
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Storybook documentation [Add link|link]"
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Technical documentation for CMS & README files for Feature Apps (GitHub) [Add link|link]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "NBD Changes for Testing – S127 Feature Cluster Section",
+            "marks": [
+              {
+                "type": "strong"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Changes implemented:"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Updated the All Features table according to the new Figma design."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "From 960px tablet view, the feature box is positioned on the right side."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "From 1280px and above, headline and subtext alignment has been adjusted to align better with the All Features box."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Changes are hidden behind the market-level NBD feature activation toggle."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

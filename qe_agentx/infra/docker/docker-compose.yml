@@ -1,0 +1,65 @@
+version: "3.9"
+
+services:
+  # ------------------------------------------------------------------ #
+  # FastAPI Backend
+  # ------------------------------------------------------------------ #
+  api:
+    build:
+      context: ../..
+      dockerfile: infra/docker/Dockerfile.api
+    ports:
+      - "8000:8000"
+    env_file:
+      - ../../.env
+    depends_on:
+      - postgres
+      - redis
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # ------------------------------------------------------------------ #
+  # Streamlit UI
+  # ------------------------------------------------------------------ #
+  ui:
+    build:
+      context: ../..
+      dockerfile: infra/docker/Dockerfile.ui
+    ports:
+      - "8501:8501"
+    env_file:
+      - ../../.env
+    depends_on:
+      - api
+
+  # ------------------------------------------------------------------ #
+  # PostgreSQL
+  # ------------------------------------------------------------------ #
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: qeagentx
+      POSTGRES_PASSWORD: qeagentx
+      POSTGRES_DB: qeagentx
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # ------------------------------------------------------------------ #
+  # Redis
+  # ------------------------------------------------------------------ #
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
